@@ -116,7 +116,7 @@
 \urlstyle{tt}
 \AtEndPreamble{
   \pagenumbering{arabic}% has to be issued before loading hyperref, as to set \thepage and hence to avoid hyperref issuing a warning and setting pdfpagelabels=false
-  \RequirePackage[unicode]{hyperref}% unicode is required for unicode pdf metadata
+  \RequirePackage{hyperref}% unicode is required for unicode pdf metadata
   \hypersetup{
     breaklinks,
     baseurl       = http://,
@@ -348,7 +348,7 @@
 % usage: \moderncvfoot[<optional foot option>]{<foot variant number>}
 \newcommand*{\moderncvfoot}[2][]{%
   \@loadmoderncvpackage[#1]{foot}{#2}}
-  
+
 % loads a color scheme
 % usage: \moderncvcolor{<color scheme name>}
 \newcommand*{\moderncvcolor}[1]{%
@@ -513,7 +513,7 @@
   \ifthenelse{\equal{#1}{}}%
     {\href{mailto:#2}{#2}}%
     {\href{mailto:#2}{#1}}}
-    
+
 % makes a tel hyperlink
 % usage: \tellink[optional text]{link}
 \newcommand*{\tellink}[2][]{%
